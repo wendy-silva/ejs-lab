@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Green Byte Bistro</title>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+  <h1>The Green Byte Bistro</h1>
+  <p>Open: 
+    <% if (restaurant.isOpen) { %>
+      Yes, we are open!
+    <% } else { %>
+      Sorry, we are closed.
+    <% } %>
+  </p>
+  <p>Address: <%= restaurant.address %></p>
+  <p>Phone: <%= restaurant.phone %></p>
+
+</body>
+</html>
